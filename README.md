@@ -5,7 +5,7 @@ This is a Magento module which adds a new command to the bin/magento shell to im
 It has been copied from https://github.com/macopedia/CategoryImporter, but I've removed the new category attribute 
 creation (which is specific for the developer who created the module).
 
-I have also included a custom Magento 1 export shell script so that you can generate the csv file from your Magento 1 installation.
+I have also included a custom Magento 1 export shell script (https://gist.github.com/catgento/2c680ea9f452a5b671e8d3c0f35ca34f) so that you can generate the csv file from your Magento 1 installation.
 
 ## Installation
 ### Composer
@@ -46,7 +46,7 @@ url_path
 You can also add custom columns and specify them when calling the script.
 
 #### Magento 1 shell script to export the Categories
-Copy the shell script (exportCategoriesCsv.php) in the shell/ folder of your Magento 1 installation. 
+Copy the shell script from this gist https://gist.github.com/catgento/2c680ea9f452a5b671e8d3c0f35ca34f (exportCategoriesCsv.php) in the shell/ folder of your Magento 1 installation. 
 You only need to execute it from inside that folder and put the output inside csv file like this:
 ```
 php exportCategoriesCsv.php > categories_m1.csv
