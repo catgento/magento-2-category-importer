@@ -13,11 +13,7 @@ I have also included a custom Magento 1 export shell script (https://gist.github
     composer require catgento/magento-2-category-importer
 ```
 ### ZIP file
-Either download the module and unzip it under the folder app/code/Catgento/CategoryImporter.  
-
-```
-    composer require catgento/magento-2-category-importer
-```
+Download the module and unzip it under the folder app/code/Catgento/CategoryImporter.  
 
 ## How to use it
 
