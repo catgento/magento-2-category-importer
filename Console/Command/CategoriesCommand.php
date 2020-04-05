@@ -264,7 +264,8 @@ class CategoriesCommand extends Command
         $category->setIsActive($this->getOptionalAttributeValue($data, 'is_active', true));
         $category->setIncludeInMenu($this->getOptionalAttributeValue($data, 'include_in_menu', true));
         if ($isParent) {
-            $category->setParentId(2);
+            $rootCategoryId = $this->storeManager->getStore(1)->getRootCategoryId();
+            $category->setParentId($rootCategoryId);
         } else {
             $categoryCollection = $this->getCategoryFromCollectionByOldId($categoryFactory, $data, 'parent_id');
             if ($categoryCollection->getSize()) {
