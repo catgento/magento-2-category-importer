@@ -5,7 +5,7 @@ This is a Magento module which adds a new command to the bin/magento shell to im
 It has been copied from https://github.com/macopedia/CategoryImporter, but I've removed the new category attribute 
 creation (which is specific for the developer who created the module).
 
-I have also included a custom Magento 1 export shell script (https://gist.github.com/catgento/2c680ea9f452a5b671e8d3c0f35ca34f) so that you can generate the csv file from your Magento 1 installation.
+I have also included a custom Magento 1 export shell script (https://gist.github.com/paugnu/2c680ea9f452a5b671e8d3c0f35ca34f) so that you can generate the csv file from your Magento 1 installation.
 
 ## Installation
 ### Composer
